@@ -1,5 +1,10 @@
 import Head from 'next/head';
 import styles from '../styles/Home.module.css';
+import {
+  Button,
+} from '@nextui-org/react';
+import Sidebar from '../components/Sidebar';
+import Navbar from '../components/Navbar';
 
 export default function Home() {
   return (
@@ -17,7 +22,11 @@ export default function Home() {
         as="main"
         style={{ height: '100vh', backgroundColor: '#011526', padding: '0'}}
       >
-        Citrus Hack
+        <Sidebar page="home"/>
+        <Navbar />
+        <div className={styles.home__container}>
+          <Button>Holi</Button>
+        </div>
       </div>
     </div>
   );
