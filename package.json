@@ -1,20 +1,35 @@
 {
-  "name": "citrus-hack",
+  "name": "whatsapp-v2-next-demo",
   "version": "0.1.0",
   "private": true,
   "scripts": {
     "dev": "next dev",
     "build": "next build",
-    "start": "next start",
-    "lint": "next lint"
+    "start": "next start"
+  },
+  "resolutions": {
+    "styled-components": "^5"
   },
   "dependencies": {
-    "next": "12.1.4",
-    "react": "18.0.0",
-    "react-dom": "18.0.0"
+    "@ant-design/icons": "^4.7.0",
+    "@material-ui/core": "^4.11.3",
+    "@material-ui/icons": "^4.11.2",
+    "@material-ui/styles": "^4.11.4",
+    "antd": "^4.19.5",
+    "better-react-spinkit": "^2.0.4",
+    "email-validator": "^2.0.4",
+    "firebase": "^8.3.0",
+    "moment": "^2.29.1",
+    "next": "10.0.9",
+    "next-images": "^1.8.4",
+    "react": "17.0.1",
+    "react-dom": "17.0.1",
+    "react-firebase-hooks": "^3.0.2",
+    "styled-components": "^5.2.1",
+    "timeago-react": "^3.0.2",
+    "timeago.js": "^4.0.2"
   },
   "devDependencies": {
-    "eslint": "8.12.0",
-    "eslint-config-next": "12.1.4"
+    "url-loader": "^4.1.1"
   }
 }
