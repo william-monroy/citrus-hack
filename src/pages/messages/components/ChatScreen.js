@@ -10,10 +10,10 @@ import TimeAgo from "timeago-react";
 import { Avatar, IconButton } from "@material-ui/core";
 import AttachFileIcon from "@material-ui/icons/AttachFile";
 import InsertEmoticonIcon from "@material-ui/icons/InsertEmoticon";
+import SendIcon from "@material-ui/icons/Send";
 import MoreVertIcon from "@material-ui/icons/MoreVert";
 import MicIcon from "@material-ui/icons/Mic";
 import Message from "./Message";
-import SendIcon from "@material-ui/icons/Send";
 import styles from "./try.module.css";
 
 function ChatScreen({ chat, messages }) {
@@ -110,9 +110,6 @@ function ChatScreen({ chat, messages }) {
         </HeaderInformation>
         <HeaderIcons>
           <IconButton>
-            <AttachFileIcon className={styles.color} />
-          </IconButton>
-          <IconButton>
             <MoreVertIcon className={styles.color} />
           </IconButton>
         </HeaderIcons>
@@ -124,23 +121,39 @@ function ChatScreen({ chat, messages }) {
       </MessageContainer>
 
       <InputContainer>
-        <InsertEmoticonIcon className={styles.color} />
-        <Input
-          value={input}
-          onChange={(e) => setInput(e.target.value)}
-          type="text"
-        />
-
-        <button
-          hidden
-          disabled={!input}
-          type="submit"
-          onClick={sendMessage}
-          className={styles.color}
+        <div
+          style={{
+            backgroundColor: "#5D3F6D",
+            width: "100%",
+            marginLeft: "10px",
+            marginRight: "10px",
+            borderRadius: "20px",
+            color: "white",
+            display: "flex",
+            alignItems: "center",
+            paddingLeft: "20px",
+            paddingRight: "20px",
+            "::placeholder": {
+              color: "#836792",
+            },
+          }}
         >
-          Send Message
-        </button>
-        <MicIcon className={styles.color} />
+          <InsertEmoticonIcon className={styles.color} />
+          <IconButton>
+            <AttachFileIcon className={styles.color} />
+          </IconButton>
+          <Input
+            value={input}
+            onChange={(e) => setInput(e.target.value)}
+            type="text"
+            placeholder="Type a message"
+          />
+
+          <IconButton type="submit" onClick={sendMessage}>
+            <SendIcon className={styles.color} />
+          </IconButton>
+          <MicIcon className={styles.color} />
+        </div>
       </InputContainer>
     </Container>
   );
@@ -192,7 +205,7 @@ const InputContainer = styled.form`
   padding: 10px;
   position: sticky;
   bottom: 0;
-  background-color: #757575;
+  background-color: #7c4c96;
   z-index: 100;
 `;
 

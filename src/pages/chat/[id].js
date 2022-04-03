@@ -6,19 +6,26 @@ import ChatScreen from "../messages/components/ChatScreen";
 import Head from "next/head";
 import { useAuthState } from "react-firebase-hooks/auth";
 import getRecipientEmail from "../messages/utils/getRecipientEmail";
+import Navbar from "../../components/Navbar";
+import LeftMenu from "../../components/Sidebar";
+import styles from "./Chat.module.css";
 
 function Chat({ chat, messages }) {
   const [user] = useAuthState(auth);
 
   return (
     <Container>
-      <Head>
-        <title>Chat with {getRecipientEmail(chat.users, user)}</title>
-      </Head>
-      <Sidebar />
-      <ChatContainer>
-        <ChatScreen chat={chat} messages={messages} />
-      </ChatContainer>
+      <LeftMenu page="messages" />
+      <Navbar />
+      <div className={styles.chat__container}>
+        <Head>
+          <title>Chat with {getRecipientEmail(chat.users, user)}</title>
+        </Head>
+        <Sidebar />
+        <ChatContainer>
+          <ChatScreen chat={chat} messages={messages} />
+        </ChatContainer>
+      </div>
     </Container>
   );
 }
@@ -60,14 +67,16 @@ export async function getServerSideProps(context) {
 }
 
 const Container = styled.div`
-  display: flex;
-  box-shadow: 1px 1px 4px -1px rgba(0, 0, 0, 0.75);
-`;
+  background-color: #011526;
+  height: 100vh;
+  `;
 
 const ChatContainer = styled.div`
-  flex: 1;
+  border-radius: 20px;
+  width: 65vw;
   overflow: scroll;
-  height: 100vh;
+  height: calc(100vh - 120px);
+  margin-left: 20px;
 
   ::-webkit-scrollbar {
     display: none;

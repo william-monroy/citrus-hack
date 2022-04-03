@@ -44,9 +44,12 @@ const Container = styled.div`
   cursor: pointer;
   padding: 15px;
   word-break: break-word;
+  transition: all 0.2s ease-in-out;
+  margin: 5px;
 
   :hover {
     background-color: #5d3f6d;
+    border-radius: 20px;
   }
 `;
 

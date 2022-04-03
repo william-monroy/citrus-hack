@@ -17,6 +17,7 @@
 
 @media screen and (max-width: 768px) {
   .forum__container {
+    width: calc(100vw - 70px);
     margin-left: 70px;
   }
 }

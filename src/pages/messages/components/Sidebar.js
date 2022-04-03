@@ -3,6 +3,7 @@ import React from "react";
 import { useAuthState } from "react-firebase-hooks/auth";
 import { auth, db } from "../../../../firebase";
 import ChatIcon from "@material-ui/icons/Chat";
+import PeopleAltIcon from '@material-ui/icons/PeopleAlt';
 import MoreVertIcon from "@material-ui/icons/MoreVert";
 import styled from "styled-components";
 import SearchIcon from "@material-ui/icons/Search";
@@ -45,15 +46,11 @@ function Sidebar() {
   return (
     <Container>
       <Header>
-        <UserAvatar onClick={() => auth.signOut()} src={user.photoURL} />
-
         <IconsContainer>
           <IconButton>
-            <ChatIcon className={styles.color} />
+            <PeopleAltIcon className={styles.color} />
           </IconButton>
-          <IconButton>
-            <MoreVertIcon className={styles.color} />
-          </IconButton>
+          <h3 className={styles.title}>Contacts</h3>
         </IconsContainer>
       </Header>
 
@@ -62,7 +59,7 @@ function Sidebar() {
         <SearchInput placeholder="Search in chats" type="text" />
       </Search>
 
-      <SidebarButton onClick={createChat}>Start a new chat</SidebarButton>
+      <SidebarButton onClick={createChat} >Start a new chat</SidebarButton>
 
       {/* Components */}
       {chatsSnapshot?.docs.map((chat) => (
@@ -75,9 +72,9 @@ function Sidebar() {
 export default Sidebar;
 
 const Container = styled.div`
-  border-radius: 30;
+  border-radius: 30px;
   flex: 0.45;
-  height: 100vh;
+  height: calc(100vh - 120px);
   min-width: 300px;
   max-width: 360px;
   background-color: #7c4c96;
@@ -128,7 +125,7 @@ const Header = styled.div`
   top: 0;
   border-bottom: 1px solid #3d2948;
 
-  background-color: #7c4c96;
+  background-color: #5d3f6d;
   z-index: 1;
   justify-content: space-between;
   align-items: center;
@@ -136,4 +133,9 @@ const Header = styled.div`
   height: 80px;
 `;
 
-const IconsContainer = styled.div``;
+const IconsContainer = styled.div`
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+`;

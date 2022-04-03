@@ -1,0 +1,16 @@
+.chat__container {
+  display: flex;
+  flex-direction: row;
+  /* background-color: red; */
+  margin-left: 200px;
+  width: calc(100vw - 200px);
+  height: calc(100vh - 80px);
+  padding: 20px;
+}
+
+@media screen and (max-width: 768px) {
+  .chat__container {
+    width: calc(100vw - 70px);
+    margin-left: 70px;
+  }
+}
