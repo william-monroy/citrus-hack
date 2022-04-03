@@ -6,7 +6,6 @@
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
-  
 }
 .navbar__input {
   background-color: transparent;
@@ -34,9 +33,15 @@
   color: white;
 }
 
+<<<<<<< HEAD
+.navbar__userimage {
+  width: 40px;
+  height: 40px;
+=======
 .navbar__userimage{
   width: 45px;
   height: 35px;
+>>>>>>> f442aad237d92954b17b3b818cf81639673a3415
   border-radius: 50%;
 }
 
@@ -63,7 +68,7 @@
     margin-left: 70px;
   }
   .navbar__input {
-   display: none; 
+    display: none;
   }
   .navbar__searchbar {
     border-radius: 50%;
@@ -73,4 +78,9 @@
     align-items: center;
     justify-content: center;
   }
+}
+.buttonSignOut {
+  border: none;
+  border-radius: 100%;
+  background-color: transparent;
 }
