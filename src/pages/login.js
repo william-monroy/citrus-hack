@@ -19,7 +19,6 @@ function login() {
   const signIn = () => {
     auth.signInWithPopup(provider).catch(console.error);
   };
-  const classes = useStyle();
 
   return (
     <div className={styles.container}>

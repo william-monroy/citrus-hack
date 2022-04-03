@@ -2,11 +2,11 @@ import { Avatar, Button, IconButton } from "@material-ui/core";
 import React from "react";
 import { useAuthState } from "react-firebase-hooks/auth";
 import { auth, db } from "../firebase";
-// import ChatIcon from "@material-ui/icons/Chat";
-// import MoreVertIcon from "@material-ui/icons/MoreVert";
+import ChatIcon from "@material-ui/icons/Chat";
+import MoreVertIcon from "@material-ui/icons/MoreVert";
 import styled from "styled-components";
-// import SearchIcon from "@material-ui/icons/Search";
-// import Chat from "./Chat";
+import SearchIcon from "@material-ui/icons/Search";
+import Chat from "./Chat";
 import { useCollection } from "react-firebase-hooks/firestore";
 import * as EmailValidator from "email-validator";
 
