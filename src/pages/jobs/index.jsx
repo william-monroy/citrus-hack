@@ -12,7 +12,11 @@ const Jobs = () => {
     <div className={styles.container}>
       <Sidebar page="jobs" />
       <Navbar />
+
       <div className={styles.jobs__container}>
+          <div style={{color:"#EFEAD7", width:"83%", marginTop:"20px"}}>
+            <h2><b>Jobs</b></h2>
+          </div>
         {
           jobs.map(job => (
             <Job

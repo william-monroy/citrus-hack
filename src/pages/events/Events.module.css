@@ -9,14 +9,37 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  background-color: beige;
+  /* background-color: beige; */
   margin-left: 200px;
   width: calc(100vw - 200px);
   height: calc(100vh - 80px);
+  padding: 20px;
 }
+
+.events {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.events .ant-badge-status {
+  width: 100%;
+  overflow: hidden;
+  font-size: 12px;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+.notes-month {
+  font-size: 28px;
+  text-align: center;
+}
+.notes-month section {
+  font-size: 28px;
+}
+
 
 @media screen and (max-width: 768px) {
   .events__container {
+    width: calc(100vw - 70px);
     margin-left: 70px;
   }
 }

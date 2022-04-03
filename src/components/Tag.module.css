@@ -1,0 +1,10 @@
+.Tag{
+    padding-top: 3px;
+    padding-bottom: 3px;
+    padding-left: 15px;
+    padding-right: 15px;
+    border-radius: 3px;
+    display: block;
+    margin-right: 10px;
+    cursor: pointer;
+}

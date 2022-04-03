@@ -10,7 +10,7 @@ const Job = ({image, title, description, duration, location}) => {
         <img
           src={image}
           alt=""
-          className={styles.jobs__job__image__img}
+          className={styles.jobs__job__image__imga}
         />
       </div>
       <div className={styles.jobs__job__description}>

@@ -5,14 +5,31 @@
 }
 
 .learning__container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  background-color: beige;
+  /* background-color: black; */
   margin-left: 200px;
   width: calc(100vw - 200px);
   height: calc(100vh - 80px);
+  padding: 20px;
+}
+
+.Content-title {
+  font-size: 30px;
+  font-weight: 600;
+  color: #f9f9f9;
+}
+
+.tags {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-top: 30px;
+}
+
+.cards{
+  margin-top: 30px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
 }
 
 @media screen and (max-width: 768px) {

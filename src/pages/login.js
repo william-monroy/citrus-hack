@@ -3,8 +3,8 @@ import { auth, provider } from "../../firebase";
 import styled from "styled-components";
 import { Button } from "@material-ui/core";
 import { makeStyles } from "@material-ui/core/styles";
-
 import Head from "next/head";
+import styles from "./Login.module.css";
 
 function login() {
   const useStyle = makeStyles((theme) => ({
@@ -19,11 +19,10 @@ function login() {
   const signIn = () => {
     auth.signInWithPopup(provider).catch(console.error);
   };
-const classes = useStyle();
-
+  const classes = useStyle();
 
   return (
-    <Container>
+    <div className={styles.container}>
       <Head>
         <title>Login</title>
       </Head>
@@ -37,19 +36,11 @@ const classes = useStyle();
           Sign in with Google
         </Button>
       </LoginContainer>
-    </Container>
+    </div>
   );
 }
 
 export default login;
-
-const Container = styled.div`
-  display: grid;
-  place-items: center;
-  height: 100vh;
-  background-color: #861657;
-  background-image: linear-gradient(326deg, #861657 0%, #ffa69e 74%);
-`;
 
 const LoginContainer = styled.div`
   padding: 100px;

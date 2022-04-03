@@ -1,0 +1,54 @@
+.container {
+  display: grid;
+  place-items: center;
+  height: 100vh;
+  background-color: #861657;
+  background-image: linear-gradient(326deg, #861657 0%, #ffa69e 74%);
+  /* background: linear-gradient(326deg, #861657 0%, #ffa69e 74%); */
+  /* background: linear-gradient(270deg, #FF7551 0%, #6B5ECD 100%); */
+  -webkit-animation: AnimationName 20s ease infinite;
+  -moz-animation: AnimationName 20s ease infinite;
+  animation: AnimationName 20s ease infinite;
+}
+
+@-webkit-keyframes AnimationName {
+  0% {
+    background-position: 0% 28%;
+  }
+
+  50% {
+    background-position: 100% 73%;
+  }
+
+  100% {
+    background-position: 0% 28%;
+  }
+}
+
+@-moz-keyframes AnimationName {
+  0% {
+    background-position: 0% 28%;
+  }
+
+  50% {
+    background-position: 100% 73%;
+  }
+
+  100% {
+    background-position: 0% 28%;
+  }
+}
+
+@keyframes AnimationName {
+  0% {
+    background-position: 0% 28%;
+  }
+
+  50% {
+    background-position: 100% 73%;
+  }
+
+  100% {
+    background-position: 0% 28%;
+  }
+}

@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { HomeFilled, ReadFilled } from "@ant-design/icons";
+import { HomeFilled, ReadFilled, SettingFilled, BulbFilled,CommentOutlined,QuestionCircleFilled,TeamOutlined, NotificationOutlined,CoffeeOutlined, ShoppingFilled, CalendarFilled  } from "@ant-design/icons";
 import styles from "./Sidebar.module.css";
 import SidebarItem from "./SidebarItem";
 // import a from "next/a";
@@ -27,7 +27,7 @@ const Sidebar = ({ page }) => {
       </a>
       <a href="/news" passHref>
         <SidebarItem
-          icon={<ReadFilled />}
+          icon={<NotificationOutlined />}
           title="News"
           color="9749D6"
           active={page == "news" ? true : false}
@@ -35,7 +35,7 @@ const Sidebar = ({ page }) => {
       </a>
       <a href="/learning" passHref>
         <SidebarItem
-          icon={<ReadFilled />}
+          icon={<BulbFilled />}
           title="Learning"
           color="5FBB6A"
           active={page == "learning" ? true : false}
@@ -43,7 +43,7 @@ const Sidebar = ({ page }) => {
       </a>
       <a href="/communities" passHref>
         <SidebarItem
-          icon={<ReadFilled />}
+          icon={<TeamOutlined />}
           title="Communities"
           color="DC49A3"
           active={page == "communities" ? true : false}
@@ -51,7 +51,7 @@ const Sidebar = ({ page }) => {
       </a>
       <a href="/jobs" passHref>
         <SidebarItem
-          icon={<ReadFilled />}
+          icon={<ShoppingFilled />}
           title="Jobs"
           color="81D0EF"
           active={page == "jobs" ? true : false}
@@ -59,7 +59,7 @@ const Sidebar = ({ page }) => {
       </a>
       <a href="/events" passHref>
         <SidebarItem
-          icon={<ReadFilled />}
+          icon={<CalendarFilled />}
           title="Events"
           color="f28888"
           active={page == "events" ? true : false}
@@ -67,7 +67,7 @@ const Sidebar = ({ page }) => {
       </a>
       <a href="/messages" passHref>
         <SidebarItem
-          icon={<ReadFilled />}
+          icon={<CommentOutlined />}
           title="Messages"
           color="F28888"
           active={page == "messages" ? true : false}
@@ -75,7 +75,7 @@ const Sidebar = ({ page }) => {
       </a>
       <a href="/forum" passHref>
         <SidebarItem
-          icon={<ReadFilled />}
+          icon={<CoffeeOutlined />}
           title="Forum"
           color="F28888"
           active={page == "forum" ? true : false}
@@ -83,7 +83,7 @@ const Sidebar = ({ page }) => {
       </a>
       <a href="/help" passHref>
         <SidebarItem
-          icon={<ReadFilled />}
+          icon={<QuestionCircleFilled />}
           title="Help"
           color="F28888"
           active={page == "help" ? true : false}
@@ -91,7 +91,7 @@ const Sidebar = ({ page }) => {
       </a>
       <a href="/settings" passHref>
         <SidebarItem
-          icon={<ReadFilled />}
+          icon={<SettingFilled />}
           title="Settings"
           color="F28888"
           active={page == "settings" ? true : false}
