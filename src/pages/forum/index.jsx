@@ -2,6 +2,7 @@ import { Button } from '@nextui-org/react'
 import React from 'react'
 import Navbar from '../../components/Navbar'
 import Sidebar from '../../components/Sidebar'
+import styles from './Forum.module.css'
 
 const Forum = () => {
   return (

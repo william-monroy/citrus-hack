@@ -1,4 +1,4 @@
-const opportunity =[
+const jobs =[
     {
         title: "Cisco Talent Incubation Program- Women (CTIP-W)",
         description:
@@ -24,3 +24,5 @@ const opportunity =[
         image:"https://play-lh.googleusercontent.com/UQXR3wgk9MFKyRW4II0RPWAFAT0LHOO0d1QDUI4_oy3JN9LEcMH1Sx8b-toXwh486bg"
     }
 ]
+
+export default jobs;

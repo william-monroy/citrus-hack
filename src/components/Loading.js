@@ -1,4 +1,6 @@
 import { Circle } from "better-react-spinkit";
+import { Loading as Loader, Spacer } from '@nextui-org/react';
+
 
 function Loading() {
   return (
@@ -18,7 +20,8 @@ function Loading() {
           style={{ marginBottom: 10 }}
           height={200}
         />
-        <Circle color="#3CBC28" size={60} />
+        <Spacer/>
+        <Loader type="points" color="secondary"/>
       </div>
     </center>
   );
