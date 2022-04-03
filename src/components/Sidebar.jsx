@@ -17,7 +17,7 @@ const Sidebar = ({ page }) => {
         <h2 className={styles.sidebar__title}>CitrusHack</h2>
       </div>
       <h3 className={styles.sidebar__subtitle}>MENU</h3>
-      <a href="/" passHref>
+      <a href="/" >
         <SidebarItem
           icon={<HomeFilled />}
           title="Home"
@@ -25,7 +25,7 @@ const Sidebar = ({ page }) => {
           active={page == "home" ? true : false}
         />
       </a>
-      <a href="/news" passHref>
+      <a href="/news" >
         <SidebarItem
           icon={<NotificationOutlined />}
           title="News"
@@ -33,7 +33,7 @@ const Sidebar = ({ page }) => {
           active={page == "news" ? true : false}
         />
       </a>
-      <a href="/learning" passHref>
+      <a href="/learning" >
         <SidebarItem
           icon={<BulbFilled />}
           title="Learning"
@@ -41,7 +41,7 @@ const Sidebar = ({ page }) => {
           active={page == "learning" ? true : false}
         />
       </a>
-      <a href="/communities" passHref>
+      <a href="/communities" >
         <SidebarItem
           icon={<TeamOutlined />}
           title="Communities"
@@ -49,7 +49,7 @@ const Sidebar = ({ page }) => {
           active={page == "communities" ? true : false}
         />
       </a>
-      <a href="/jobs" passHref>
+      <a href="/jobs" >
         <SidebarItem
           icon={<ShoppingFilled />}
           title="Jobs"
@@ -57,7 +57,7 @@ const Sidebar = ({ page }) => {
           active={page == "jobs" ? true : false}
         />
       </a>
-      <a href="/events" passHref>
+      <a href="/events" >
         <SidebarItem
           icon={<CalendarFilled />}
           title="Events"
@@ -65,7 +65,7 @@ const Sidebar = ({ page }) => {
           active={page == "events" ? true : false}
         />
       </a>
-      <a href="/messages" passHref>
+      <a href="/messages" >
         <SidebarItem
           icon={<CommentOutlined />}
           title="Messages"
@@ -73,7 +73,7 @@ const Sidebar = ({ page }) => {
           active={page == "messages" ? true : false}
         />
       </a>
-      <a href="/forum" passHref>
+      <a href="/forum" >
         <SidebarItem
           icon={<CoffeeOutlined />}
           title="Forum"
@@ -81,7 +81,7 @@ const Sidebar = ({ page }) => {
           active={page == "forum" ? true : false}
         />
       </a>
-      <a href="/help" passHref>
+      <a href="/help" >
         <SidebarItem
           icon={<QuestionCircleFilled />}
           title="Help"
@@ -89,7 +89,7 @@ const Sidebar = ({ page }) => {
           active={page == "help" ? true : false}
         />
       </a>
-      <a href="/settings" passHref>
+      <a href="/settings" >
         <SidebarItem
           icon={<SettingFilled />}
           title="Settings"

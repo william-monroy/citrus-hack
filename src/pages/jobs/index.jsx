@@ -18,9 +18,9 @@ const Jobs = () => {
             <h2><b>Jobs</b></h2>
           </div>
         {
-          jobs.map(job => (
+          jobs.map((job,index) => (
             <Job
-              key={job.id}
+              key={index}
               image={job.image}
               title={job.title}
               description={job.description}

@@ -27,7 +27,8 @@
     "react-firebase-hooks": "^3.0.2",
     "styled-components": "^5.2.1",
     "timeago-react": "^3.0.2",
-    "timeago.js": "^4.0.2"
+    "timeago.js": "^4.0.2",
+    "twilio": "^3.76.0"
   },
   "devDependencies": {
     "eslint": "8.12.0",
