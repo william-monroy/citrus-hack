@@ -10,7 +10,21 @@ const Communities = () => {
       <Sidebar page="communities"/>
       <Navbar />
       <div className={styles.communities__container}>
-        <Button>Holi</Button>
+        <h2 className={styles.communities__title}>Discover</h2>
+        <div className={styles.communities__cards}>
+          <div className={styles.communities__card}>
+            <img src="https://i.imgur.com/JPMb99X.png" alt="" />
+          </div>
+          <div className={styles.communities__card}>
+            <img src="https://i.imgur.com/q0rC2aW.png" alt="" />
+          </div>
+          <div className={styles.communities__card}>
+            <img src="https://i.imgur.com/q0rC2aW.png" alt="" />
+          </div>
+          <div className={styles.communities__card}>
+            <img src="https://i.imgur.com/Yhepr75.png" alt="" />
+          </div>
+        </div>
       </div>
     </div>
   )
