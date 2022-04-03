@@ -52,3 +52,10 @@
     background-position: 0% 28%;
   }
 }
+.RoundedButton {
+  background-color: #f28888;
+  border-radius: 10;
+  color: white;
+  height: 40;
+  font-family: monospace;
+}
