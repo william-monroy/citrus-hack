@@ -5,7 +5,6 @@ import styles from "./Navbar.module.css";
 import { auth, db } from "../../firebase";
 import { useAuthState } from "react-firebase-hooks/auth";
 
-
 const Navbar = () => {
   const [user] = useAuthState(auth);
 
@@ -18,16 +17,26 @@ const Navbar = () => {
         </div>
       </div>
       <div className={styles.navbar__right}>
-        <Button color="error" >Emergency Button</Button>
-        <Button auto  onClick={() => auth.signOut()} color ="transparent" >
-        <img
-          src={user.photoURL}
-          alt="user image"
-          className={styles.navbar__userimage}
-        />
-        </Button>
+        <Button color="error">Emergency Button</Button>
+        <button
+          className={styles.navbar__button}
+          onClick={() => auth.signOut()}
+        >
+          <img
+            src={user.photoURL}
+            alt="user image"
+            className={styles.navbar__userimage}
+          />
+        </button>
         <p className={styles.navbar__username}>{user.email}</p>
-        <DownOutlined style={{ fontSize: "10px", color: "#808191", marginLeft:"10px", marginRight:"10px" }} />
+        <DownOutlined
+          style={{
+            fontSize: "10px",
+            color: "#808191",
+            marginLeft: "10px",
+            marginRight: "10px",
+          }}
+        />
         <BellFilled style={{ fontSize: "20px", color: "#808191" }} />
       </div>
     </nav>

@@ -35,11 +35,9 @@
 }
 
 .navbar__userimage{
-  width: 40px;
-  height: 40px;
+  width: 45px;
+  height: 35px;
   border-radius: 50%;
-  margin-right: 10px;
-  margin-left: 20px;
 }
 
 .navbar__right {
@@ -48,6 +46,16 @@
   flex-direction: row;
   align-items: center;
   margin-right: 20px;
+}
+
+.navbar__button {
+  width: 45px;
+  height: 45px;
+  margin-right: 10px;
+  margin-left: 20px;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
 }
 
 @media screen and (max-width: 768px) {

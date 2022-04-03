@@ -12,7 +12,7 @@
   /* background-color: beige; */
   background-color:#011526;
   margin-left: 200px;
-  width: 100%;
+  width: calc(100vw - 200px);
   height: calc(100vh - 80px);
 }
 
