@@ -59,3 +59,21 @@
   height: 40;
   font-family: monospace;
 }
+
+.button{
+  background-color: #f28888;
+  border-radius: 10px;
+  cursor: pointer;
+  padding: 15px;
+  border: none;
+  color: white;
+  height: 40;
+  font-family: monospace;
+  transition: all 0.5s;
+}
+
+  .button:hover{
+    background-color: #ffa69e;
+    color: black;
+
+  }

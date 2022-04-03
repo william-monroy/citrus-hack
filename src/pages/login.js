@@ -19,7 +19,6 @@ function login() {
   const signIn = () => {
     auth.signInWithPopup(provider).catch(console.error);
   };
-  const classes = useStyle();
   return (
     <div className={styles.container}>
       <Head>
@@ -27,13 +26,13 @@ function login() {
       </Head>
       <LoginContainer>
         <Logo src="https://i.ibb.co/vqFCHPL/loginscreen.png" alt="" />
-        <Button
+        <button
           variant="outlined"
           onClick={signIn}
-          className={classes.RoundedButton}
+          className={styles.button}
         >
           Sign in with Google
-        </Button>
+        </button>
       </LoginContainer>
     </div>
   );
