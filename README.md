@@ -1,34 +1,40 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# sheConnect
 
-## Getting Started
+## Inspiration
+According to the Gender identity worldwide 2021 survey from Statista, in a global survey conducted in 2021, two percent of respondents from 27 countries identified themselves as transgender, non-binary/non-conforming/gender-fluid, or in another way. In Germany and Sweden, around three percent of the respondents stated to identify themselves with one of the listed genders.
 
-First, run the development server:
 
-```bash
-npm run dev
-# or
-yarn dev
-```
+## What it does
+sheConnect is a social media website for the non-binary or women to connect with others, find jobs, learn news, meet with different communities or even schedule an event for themselves..
+Also, our service makes an environment the members can help each other when they need professional help as a lawyer, physiology, etc.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## How we built it
+We follow this step
+1. We investigate groups that do not feel represented or lack opportunities.
+2. We interview people who belong to these groups.
+3. We collect your needs and put them into a social network-type website solution.
+4. We use technologies such as:
+- Next.js
+- Google geolocation API
+- Twilio SMS API
+- Firebase
 
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
+## Challenges we ran into
+The biggest challenge was the time of 24 hours to carry out a project with great impact like the one we are looking for. However, we managed to present a minimum viable product that responds to the problem that we set out to address. All this was possible thanks to teamwork.
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.js`.
+## Accomplishments that we're proud of
+We are proud to have created a great project in a limited time and to have learned about new technologies such as Next.js, Twilio API, styled-components, firebase, geolocation API, material UI, etc.
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+## What we learned
+Most of our team have no experience doing the pitching, by then we need more time to make a presentation. Since we were not in the same city we should have worked online by living in a different time zone thus we needed to have enough conversation to concrete our solution and make our prototype. By having the different experiences we have talked about our technical skills to decide what language, frameworks, platforms, etc are going to use.
+Basically, we improved our communication and technical skills working on this Hackathon.
 
-## Learn More
+## What's next for sheConnects[online]
+The key for our social network to be a success and to be able to support many people is that it be easy to use and accessible from anywhere, which is why we have proposed a web page that you do not need to download to your phone in order to use it. Here is our roadmap for sheConnect:
 
-To learn more about Next.js, take a look at the following resources:
+2022:
+- Establish agreements with communities to create content that is relevant to users.
+- Seek the support of non-profit organizations to scale our solution to payment plans that we can pay for with donations from these organizations or from individuals.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+2023:
+- Extend our platform to a mobile client using technologies like react-native or flutter and make it compatible with android and iOS devices
